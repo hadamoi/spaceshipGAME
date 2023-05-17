@@ -1,11 +1,11 @@
 // render canvas
-let canvas;
-let ctx;
-canvas = document.createElement('canvas');
-ctx = canvas.getContext('2d');
+let canvas = document.createElement('canvas');
+let ctx = canvas.getContext('2d');
+let container = document.getElementById('container');
+
 canvas.width = 400;
 canvas.height = 700;
-document.body.appendChild(canvas);
+container.appendChild(canvas);
 
 let backgroundImage, spaceshipImage, bulletImage, enemyImage, gameOverImage;
 let score = 0;
@@ -70,7 +70,7 @@ function Enemy(){
 
 function loadImage(){
   backgroundImage = new Image();
-  backgroundImage.src = 'images/bg.png';
+  backgroundImage.src = 'images/body_bg.jpg';
 
   spaceshipImage = new Image();
   spaceshipImage.src = 'images/spaceship.png';
