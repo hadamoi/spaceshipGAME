@@ -30,4 +30,4 @@ function setupKeyboardListener() {
 * The setupKeyboardListener() function detects keyboard events and processes the player's input.
 * Two functions are registered to handle events when a key is pressed and released.
 * When the spacebar key is pressed, the createBullet() function is called to create a bullet.
-##### It's important to note that there is a separation between when the keyboard is pressed and when it is released.
+* It's important to note that there is a separation between when the keyboard is pressed and when it is released.
