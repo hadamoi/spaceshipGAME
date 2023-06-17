@@ -63,7 +63,6 @@ function Enemy(){
     this.y  += 2;
     if(this.y >= canvas.height - 48){
       gameOver = true;
-      console.log('gameOver')
     }
   }
 };
@@ -90,7 +89,6 @@ let keysDown = {};
 function setupKeyboardListener() {
   document.addEventListener('keydown', function(event){
     keysDown[event.key] = true;
-    console.log('무슨키가 눌렸어?', keysDown);
   });
 
   document.addEventListener('keyup', function(event){
@@ -104,7 +102,6 @@ function setupKeyboardListener() {
 }
 
 function createBullet(){
-  console.log('shoot')
   let b = new Bullet(); // create a bullet
   b.init()
 }
@@ -176,12 +173,5 @@ loadImage();
 setupKeyboardListener();
 createEnemy();
 main();
-
-// making bullets
-// 1. Space bar fires bullets.
-// 2. As the bullet is fired, the bullet's y-value continues to decrease.
-// 3. The x-value of the bullet is the x-value of the spacecraft at the moment you pressed space.
-// 4. Bullets must have x,y coordinate values.
-// 5. Take an array of bullets and call render()
 
 
