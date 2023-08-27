@@ -165,7 +165,7 @@ function main(){
     render();
     requestAnimationFrame(main);
   } else{
-    ctx.drawImage(gameOverImage,10, gameOverImage.height - 20, 380, 200)
+    ctx.drawImage(gameOverImage,(canvas.width - 240) / 2, canvas.height / 2 - 119, 240, 119)
   }
 };
 

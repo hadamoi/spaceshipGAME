@@ -21,3 +21,14 @@ body {
   transform: translate(-50%, -50%);
   text-align: center;
 }
+
+@media screen and (max-width: 768px) {
+  h1 {
+    display: none;
+  }
+
+  canvas {
+    width: 100vw;
+    height: 100vh;
+  }
+}
